@@ -14,7 +14,7 @@ const TECH = [
   {
     icon: <Palette size={18} />,
     name: 'Tailwind CSS v3',
-    desc: 'Utility-first CSS with custom Catppuccin color tokens.',
+    desc: 'Utility-first CSS with custom color tokens.',
     color: 'sky',
   },
   {
@@ -32,7 +32,7 @@ const TECH = [
   {
     icon: <Database size={18} />,
     name: 'localStorage',
-    desc: 'Browser-side persistence — your data survives page refreshes.',
+    desc: 'Browser-side persistence.',
     color: 'peach',
   },
   {
@@ -79,7 +79,7 @@ export default function About() {
         <p className={`text-base max-w-md mx-auto leading-relaxed ${dark ? 'text-ctp-subtext1' : 'text-latte-subtext1'}`}>
           A personal reading journal that lives entirely in your browser — no
           accounts, no servers, no fuss. Track your books, watch your progress,
-          and celebrate every page turned.
+          and every page turned.
         </p>
       </div>
 
@@ -218,15 +218,14 @@ export default function About() {
           </div>
           <div>
             <p className={`font-display font-semibold text-lg ${dark ? 'text-ctp-text' : 'text-latte-text'}`}>
-              Your Name
+             Ajitesh
             </p>
             <p className={`text-sm ${dark ? 'text-ctp-subtext0' : 'text-latte-subtext0'}`}>
-              Frontend Developer · Computer Science Student
+              Computer Science Student
             </p>
             <p className={`text-xs mt-1.5 leading-relaxed ${dark ? 'text-ctp-subtext0' : 'text-latte-subtext0'}`}>
               Built BookTracker as a college project to explore React, context
-              management, and thoughtful UI design. Loves clean code, good
-              typography, and well-designed tools.
+              management, and thoughtful UI design. 
             </p>
           </div>
         </div>
@@ -237,7 +236,7 @@ export default function About() {
             ${dark ? 'text-ctp-overlay1' : 'text-latte-overlay1'}
           `}
         >
-          Built with <Heart size={13} className={dark ? 'text-ctp-red' : 'text-latte-red'} fill="currentColor" /> using React, Tailwind & Catppuccin
+          Built using React & Tailwind
         </p>
       </section>
     </div>

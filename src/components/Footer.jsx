@@ -43,8 +43,7 @@ export default function Footer() {
             <p
               className={`text-sm leading-relaxed ${dark ? 'text-ctp-subtext0' : 'text-latte-subtext0'}`}
             >
-              A personal reading journal to track your literary journey — one
-              page at a time.
+              A personal reading journal to track your literary journey
             </p>
           </div>
 
@@ -116,19 +115,15 @@ export default function Footer() {
           <p
             className={`text-xs flex items-center gap-1 ${dark ? 'text-ctp-overlay0' : 'text-latte-overlay0'}`}
           >
-            Made with{' '}
-            <Heart
-              size={12}
-              className={dark ? 'text-ctp-red' : 'text-latte-red'}
-              fill="currentColor"
-            />{' '}
-            using React &amp; Tailwind · {year}
+            Made using React &amp; Tailwind · {year}
           </p>
           <p className={`text-xs ${dark ? 'text-ctp-overlay0' : 'text-latte-overlay0'}`}>
             Themed with{' '}
-            <span className={dark ? 'text-ctp-mauve' : 'text-latte-mauve'}>
-              Catppuccin Mocha
-            </span>
+			<a href="https://github.com/catppuccin/catppuccin" target="_blank">
+				<span className={dark ? 'text-ctp-mauve' : 'text-latte-mauve'}>
+				  Catppuccin Mocha
+				</span>
+			</a>
           </p>
         </div>
       </div>
