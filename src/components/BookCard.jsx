@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { createPortal } from 'react-dom'
 import { Pencil, Trash2, BookOpen } from 'lucide-react'
 import { useBooks } from '../context/BookContext'
 import BookFormModal from './BookFormModal'
@@ -203,18 +204,18 @@ export default function BookCard({ book }) {
         </div>
       </div>
 
-      {showEdit && (
+      {showEdit && createPortal(
         <BookFormModal
           mode="edit"
           book={book}
           onClose={() => setShowEdit(false)}
-        />
+        />, document.body
       )}
-      {showDelete && (
+      {showDelete && createPortal(
         <DeleteConfirmModal
           book={book}
           onClose={() => setShowDelete(false)}
-        />
+        />, document.body
       )}
     </>
   )
