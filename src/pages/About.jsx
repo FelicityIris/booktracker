@@ -1,6 +1,6 @@
 import React from 'react'
 import {
-  BookOpen, Code2, Palette, Database, Zap, Github, Heart, User, Globe
+  BookOpen, Code2, Palette, Database, Zap, Heart, User, Globe
 } from 'lucide-react'
 import { useBooks } from '../context/BookContext'
 
